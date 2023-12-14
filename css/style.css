@@ -102,11 +102,20 @@ main .main-box .img-box .img-hov{
 
     top: 0;
 
-    display: none;
+    /* display: none; */
+
+    transition: 0.4s ease;
+
+    opacity: 0;
+
+
 }
 
 main .main-box .img-box:hover .img-hov{
-    display: block;
+    /* display: block; */
+
+    opacity: 1;
+
 }
 
 main .main-box .img-box img{   
@@ -135,12 +144,19 @@ main .main-box .img-box .mini-box{
 }
 main .main-box .img-box .heart{
 
+    font-size: 25px;
+    line-height: 15px;
     right: 0;
     top: 10px;
     
     padding: 10px;
 
     background-color: white;
+}
+
+main .main-box .img-box .heart:hover{
+    
+    color:red;
 }
 
 main .main-box .img-box .sales{
@@ -172,3 +188,55 @@ main .main-box .img-box .price span{
     text-decoration: line-through;
     color: black;
 }
+
+/* end main */
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer .footer-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+
+    max-width: 1050px;
+
+    margin: 25px 0;
+
+}
+
+footer .footer-box .information{
+    text-align: left;
+
+    
+}
+
+footer .footer-box .information .list li{
+    list-style: none;
+
+    font-size: small;
+
+    display: inline-block;
+    padding-right: 5px;
+    padding-top: 8px;
+
+}
+
+footer .footer-box .information p{
+    font-size: small;
+}
+
+footer .footer-box .information i{
+    padding-right:4px ;
+    padding-top:8px ;
+}
+
+/* end footer */
