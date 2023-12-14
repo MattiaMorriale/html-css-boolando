@@ -10,10 +10,14 @@
 /* nav bar */
 
 nav{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 100%;
 
     position: fixed;
+    z-index: 10;
+
+    box-shadow: 2px 2px 2px rgb(163, 161, 161);
 
 
     background-color: #FF6900;
@@ -25,13 +29,9 @@ nav{
     align-items: center;
     flex-grow: 1;
 
-    position: relative;
+    padding: 10px 0;
 
-    left: 15%;
-
-    padding: 20px 0;
-
-    max-width: 1000px;
+    max-width: 1050px;
 }
 
 .nav-box .category{
@@ -61,9 +61,102 @@ nav{
     gap: 10px;
     flex-grow: 1;
 
+    color: white;
+
     max-width: 170px;
 }
 
 .nav-box .nav-icon i{
     gap: 20px;
+}
+
+/* end nav bar */
+
+/* main of the page*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+    padding: 0 80px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    max-width: 1500px;
+
+}
+
+main .main-box .img-box{
+    position: relative;
+}
+
+
+main .main-box .img-box img{   
+    
+    height: 500px;
+
+    z-index: 0;
+}
+
+main .main-box .img-box .tags{
+    position: absolute;
+
+    z-index: 1;
+}
+
+main .main-box .img-box .mini-box{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+    bottom: 80px;
+
+    max-width: 250px;
+}
+main .main-box .img-box .heart{
+
+    right: 0;
+    top: 10px;
+    
+    padding: 10px;
+
+    background-color: white;
+}
+
+main .main-box .img-box .sales{
+
+    padding: 4px 10px;
+    font-size: small;
+
+    background-color: #FF0000;
+    color: white;
+}
+
+main .main-box .img-box .sust{
+
+    padding: 4px 10px;
+    font-size:small;
+
+    background-color: #25c025;
+    color: white;
+
+}
+
+
+main .main-box .img-box .price{
+    font-size: x-small;
+    color: red;
+}
+
+main .main-box .img-box .price span{
+    text-decoration: line-through;
+    color: black;
 }
