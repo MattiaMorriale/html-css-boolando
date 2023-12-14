@@ -97,6 +97,17 @@ main .main-box .img-box{
     position: relative;
 }
 
+main .main-box .img-box .img-hov{
+    position: absolute;
+
+    top: 0;
+
+    display: none;
+}
+
+main .main-box .img-box:hover .img-hov{
+    display: block;
+}
 
 main .main-box .img-box img{   
     
@@ -104,6 +115,7 @@ main .main-box .img-box img{
 
     z-index: 0;
 }
+
 
 main .main-box .img-box .tags{
     position: absolute;
@@ -117,7 +129,7 @@ main .main-box .img-box .mini-box{
     justify-content: space-between;
     gap: 5px;
 
-    bottom: 80px;
+    bottom: 90px;
 
     max-width: 250px;
 }
