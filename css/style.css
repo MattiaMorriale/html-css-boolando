@@ -37,16 +37,31 @@ nav{
 .nav-box .category{
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 15px;
     flex-grow: 1;
 
     max-width: 170px;
 }
 
 .nav-box .category a{
+
     text-decoration: none;
     
     font-weight: bold;
+
+    color: white;
+
+    transition: 0.2s ease;
+}
+
+.nav-box .category a:hover{
+    text-decoration: none;
+    
+    font-weight: bold;
+
+    font-size: 20px;
+
+    transition: 0.2s ease;
 
     color: white;
 }
@@ -68,6 +83,16 @@ nav{
 
 .nav-box .nav-icon i{
     gap: 20px;
+
+    transition: 0.2s ease;
+}
+
+.nav-box .nav-icon i:hover{
+    gap: 20px;
+
+    font-size: 20px;
+
+    transition: 0.2s ease;
 }
 
 /* end nav bar */
@@ -102,8 +127,6 @@ main .main-box .img-box .img-hov{
 
     top: 0;
 
-    /* display: none; */
-
     transition: 0.4s ease;
 
     opacity: 0;
@@ -112,7 +135,6 @@ main .main-box .img-box .img-hov{
 }
 
 main .main-box .img-box:hover .img-hov{
-    /* display: block; */
 
     opacity: 1;
 
