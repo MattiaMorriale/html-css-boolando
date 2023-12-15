@@ -64,6 +64,8 @@ nav{
     transition: 0.2s ease;
 
     color: white;
+
+    cursor: pointer;
 }
 
 .nav-box .logo img{
@@ -93,6 +95,8 @@ nav{
     font-size: 20px;
 
     transition: 0.2s ease;
+
+    cursor: pointer;
 }
 
 /* end nav bar */
@@ -138,6 +142,8 @@ main .main-box .img-box:hover .img-hov{
 
     opacity: 1;
 
+    cursor: pointer;
+
 }
 
 main .main-box .img-box img{   
@@ -174,11 +180,19 @@ main .main-box .img-box .heart{
     padding: 10px;
 
     background-color: white;
+
+    transition: 0.2s ease;
+
+    
 }
 
 main .main-box .img-box .heart:hover{
     
     color:red;
+
+    transition: 0.2s ease;
+
+    cursor: pointer;
 }
 
 main .main-box .img-box .sales{
@@ -250,6 +264,8 @@ footer .footer-box .information .list li{
     padding-right: 5px;
     padding-top: 8px;
 
+    cursor: pointer;
+
 }
 
 footer .footer-box .information p{
@@ -259,6 +275,8 @@ footer .footer-box .information p{
 footer .footer-box .information i{
     padding-right:4px ;
     padding-top:8px ;
+
+    cursor: pointer;
 }
 
 /* end footer */
